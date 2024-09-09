@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="500.0" maxWidth="900.0" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.ExtraTimeTeacherBoundry">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="138.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="209.0">
+               <children>
+                  <AnchorPane prefHeight="500.0" prefWidth="209.0" style="-fx-background-color: #0598ff; -fx-border-width: 0px 0px 2px 0px;">
+                     <children>
+                        <Button fx:id="editExamBtn" layoutY="159.0" mnemonicParsing="false" onAction="#EditExamsAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Edit Exam" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="createExamBtn" layoutY="81.0" mnemonicParsing="false" onAction="#createAnExamAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Creat Exam" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="editQuestionBtn" layoutY="120.0" mnemonicParsing="false" onAction="#EditQuestionsAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Edit Question" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="createQuestionBtn" layoutY="42.0" mnemonicParsing="false" onAction="#createAnQuestionAction" prefHeight="30.0" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Create Question" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="logoutBtn" layoutY="446.0" mnemonicParsing="false" onAction="#logoutAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Logout" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="aquireExamBtn" layoutY="198.0" mnemonicParsing="false" onAction="#aquireExamAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="     Aquire Exam From Repository" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="sendExamsToStudentsBtn" layoutY="237.0" mnemonicParsing="false" onAction="#sendExamsToStudentsAction" prefHeight="30.0" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Send Exams To Students" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="approveExamBtn" layoutY="315.0" mnemonicParsing="false" onAction="#approveExamAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Approve Exams" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="seeResultsBtn" layoutY="354.0" mnemonicParsing="false" onAction="#seeResultsAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="View Grades" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="homeBtn" layoutY="3.0" mnemonicParsing="false" onAction="#homeBtnAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Home" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="sendExamsToStudentsBtn2" layoutY="276.0" mnemonicParsing="false" onAction="#extraTimeAction" prefHeight="30.0" prefWidth="209.0" style="-fx-background-color: #273be2;" stylesheets="@ButtonCss.css" text="Request Extra Time" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                        <Button fx:id="notificationBtn" layoutY="394.0" mnemonicParsing="false" onAction="#notificationAction" prefWidth="140.0" stylesheets="@ButtonCss.css" text="Notifications" textFill="WHITE">
+                           <effect>
+                              <InnerShadow>
+                                 <color>
+                                    <Color red="1.0" green="1.0" blue="1.0" />
+                                 </color>
+                              </InnerShadow>
+                           </effect>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="775.0" stylesheets="@ButtonCss.css" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="236.0" prefHeight="400.0" prefWidth="375.0">
+               <children>
+                  <TableView fx:id="table" layoutX="-219.0" layoutY="197.0" prefHeight="286.0" prefWidth="627.0" style="-fx-border-color: #000000; -fx-border-width: 3;">
+                     <columns>
+                        <TableColumn fx:id="examIdCol" prefWidth="75.0" text="Exam ID" />
+                        <TableColumn fx:id="courseCol" prefWidth="119.0" text="Course" />
+                        <TableColumn fx:id="numberOfExaminees" prefWidth="183.0" text="Number of Examinees" />
+                        <TableColumn fx:id="PressForExtraTimeCol" prefWidth="175.0" text="Press To" />
+                        <TableColumn fx:id="statusCol" prefWidth="75.0" text="Status" />
+                     </columns>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </TableView>
+                  <ImageView fitHeight="114.0" fitWidth="113.0" layoutX="333.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/finallogo.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="timeLabel" layoutX="281.0" layoutY="7.0" prefHeight="67.0" prefWidth="173.0" textFill="#0598ff">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

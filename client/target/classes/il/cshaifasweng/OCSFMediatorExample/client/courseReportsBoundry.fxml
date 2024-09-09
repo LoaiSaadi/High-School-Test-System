@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.CourseReportsBoundry">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="209.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="500.0" prefWidth="209.0" style="-fx-background-color: #ccccff;">
+               <children>
+                  <Button fx:id="homeBtn" layoutY="3.0" mnemonicParsing="false" onAction="#homeBtnAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="Home" />
+                  <Button fx:id="extraTimeBtn" layoutY="183.0" mnemonicParsing="false" onAction="#extraTimeAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View Extra Time Requests" />
+                  <Button fx:id="viewQuestionsBtn" layoutY="48.0" mnemonicParsing="false" onAction="#viewQuestionsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View questions" />
+                  <Button fx:id="teacherReportsBtn" layoutY="225.0" mnemonicParsing="false" onAction="#teacherReportsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="Teacher Reports" />
+                  <Button fx:id="viewGradesBtn" layoutY="138.0" mnemonicParsing="false" onAction="#viewGradesAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View grades" />
+                  <Button fx:id="logoutBtn" layoutY="442.0" mnemonicParsing="false" onAction="#logoutAction" stylesheets="@Pbutuun.css" text="Logout" />
+                  <Button fx:id="studentReportsBtn" layoutY="315.0" mnemonicParsing="false" onAction="#studentReportsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="Student Reports" />
+                  <Button fx:id="courseReportsBtn" layoutY="270.0" mnemonicParsing="false" onAction="#courseReportsAction" prefHeight="32.0" prefWidth="209.0" style="-fx-background-color: #5a4fcf;" text="Course Reports">
+                     <stylesheets>
+                        <URL value="@designs.css" />
+                        <URL value="@Pbutuun.css" />
+                     </stylesheets>
+                  </Button>
+                  <Button fx:id="viewExamsBtn" layoutY="93.0" mnemonicParsing="false" onAction="#viewExamsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View exams" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="223.0" prefWidth="614.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="614.0">
+               <children>
+                  <TextField fx:id="medianTextField" layoutX="29.0" layoutY="151.0" onAction="#medianTextFieldAction" prefHeight="30.0" prefWidth="100.0" stylesheets="@Pbutuun.css">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.48235294222831726" green="0.40784314274787903" blue="0.9333333373069763" />
+                           </color>
+                        </InnerShadow>
+                     </effect>
+                  </TextField>
+                  <TextField fx:id="averageTextField" layoutX="29.0" layoutY="69.0" onAction="#averageTextFieldAction" prefHeight="30.0" prefWidth="100.0" stylesheets="@Pbutuun.css">
+                     <effect>
+                        <InnerShadow>
+                           <color>
+                              <Color red="0.48235294222831726" green="0.40784314274787903" blue="0.9333333373069763" />
+                           </color>
+                        </InnerShadow>
+                     </effect></TextField>
+                  <ListView fx:id="coursesList" layoutX="172.0" layoutY="69.0" prefHeight="122.0" prefWidth="169.0" style="-fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.48235294222831726" green="0.40784314274787903" blue="0.9333333373069763" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ListView>
+                  <Label layoutX="172.0" layoutY="39.0" minWidth="107.0" prefHeight="30.0" prefWidth="169.0" stylesheets="@Pbutuun.css" text="                      Courses" textFill="WHITE" />
+                  <Label layoutX="30.0" layoutY="32.0" minWidth="101.0" prefHeight="30.0" prefWidth="100.0" text="    The Average" textFill="WHITE">
+                     <stylesheets>
+                        <URL value="@Pbutuun.css" />
+                        <URL value="@rami.css" />
+                     </stylesheets></Label>
+                  <Label layoutX="29.0" layoutY="115.0" minWidth="101.0" prefHeight="30.0" prefWidth="101.0" text="    The Median" textFill="WHITE">
+                     <stylesheets>
+                        <URL value="@Pbutuun.css" />
+                        <URL value="@rami.css" />
+                     </stylesheets></Label>
+                  <ImageView fitHeight="132.0" fitWidth="186.0" layoutX="414.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/finallogop.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="timeLabel" layoutX="427.0" layoutY="29.0" prefHeight="67.0" prefWidth="173.0" textFill="MEDIUMSLATEBLUE">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <ListView fx:id="listViewExams" layoutX="37.0" layoutY="205.0" prefHeight="271.0" prefWidth="362.0" style="-fx-border-color: #000000; -fx-border-width: 3;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.48235294222831726" green="0.40784314274787903" blue="0.9333333373069763" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ListView>
+            <Button fx:id="compare" layoutX="423.0" layoutY="321.0" mnemonicParsing="false" onAction="#compareAction" stylesheets="@Pbuttun1.css" text="Compare" />
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

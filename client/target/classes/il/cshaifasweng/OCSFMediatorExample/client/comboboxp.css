@@ -1,0 +1,27 @@
+.combo-box{
+    -fx-background-color:  #7b68ee;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.combo-box:hover{
+    -fx-background-color:  #5a4fcf;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.combo-box:armed , .combo-box:showing{
+    -fx-background-color:  #5a4fcf;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-effect: dropshadow(gaussian, #7b68ee, 6, 0.5, 0, 0);
+
+}
+.combo-box {
+    -fx-effect: dropshadow(gaussian, #7b68ee, 6, 0.5, 0, 0);
+
+}

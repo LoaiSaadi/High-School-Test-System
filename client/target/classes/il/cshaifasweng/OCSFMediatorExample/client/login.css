@@ -1,0 +1,186 @@
+.login-button-student {
+    -fx-background-color: #ffa500; /* Green color for students */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #e9692c, 6, 0.5, 0, 0);
+}
+.login-button-student:hover{
+    -fx-background-color:  #e9692c;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-effect: dropshadow(gaussian, #e9692c, 6, 0.5, 0, 0);
+
+}
+.login-button-student:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+    -fx-effect: dropshadow(gaussian, #e9692c, 6, 0.5, 0, 0);
+
+}
+.login-button-teacher {
+    -fx-background-color: #0598ff; /* Orange color for teachers */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 6, 0.5, 0, 0);
+}
+.login-button-teacher:hover{
+    -fx-background-color:  #1f75fe;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 10, 0.5, 0, 0);
+
+}
+.login-button-teacher:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 10, 0.5, 0, 0);
+
+}
+.login-button-principle {
+    -fx-background-color: #ccccff; /* Orange color for teachers */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #5a4fcf, 6, 0.5, 0, 0);
+}
+.login-button-principle:hover{
+    -fx-background-color:  #5a4fcf;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #5a4fcf, 10, 0.5, 0, 0);
+
+}
+.login-button-principle:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #5a4fcf, 10, 0.5, 0, 0);
+
+}
+.anchor-pane-student {
+    -fx-background-color: #ffa500; /* Set your desired background color */
+}
+.anchor-pane-teacher {
+    -fx-background-color: #0598ff; /* Set your desired background color */
+}
+.anchor-pane-principle {
+    -fx-background-color: #ccccff; /* Set your desired background color */
+}
+
+.button:hover {
+    -fx-background-color:   #5a4fcf;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 0 30 30 0;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-width: 0 0 3 3;
+
+}
+
+.button:pressed {
+    -fx-translate-x: 1px; /* Move the button 5 pixels to the right */
+    -fx-translate-y: 1px; /* Move the button 5 pixels down */
+}
+.text-field-student {
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #ffa500; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.text-field-teacher {
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #0598ff; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.text-field-principle {
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #ccccff; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.label-student{
+    -fx-text-fill: #ffa500;
+}
+.label-teacher{
+    -fx-text-fill: #0598ff;
+}
+.label-principle{
+    -fx-text-fill: #ccccff;
+}
+.check-box-student{
+    -fx-text-fill: #ffa500;
+
+}
+.check-box-teacher{
+    -fx-text-fill: #0598ff;
+
+}
+.check-box-principle{
+    -fx-text-fill: #ccccff;
+
+}
+.password-field-custom-student{
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #ffa500; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.password-field-custom-teacher{
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #0598ff; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.password-field-custom-principle{
+    -fx-background-color: transparent; /* Set the text color to black */
+    -fx-border-color: #ccccff; /* Set the background color of the text field */
+    -fx-border-width: 0 0 2 0;
+}
+.combo-box{
+    -fx-pref-width:185px ;
+    -fx-pref-height: 25px;
+    -fx-border-color: #000000;
+    -fx-background-radius: 90;
+    -fx-border-radius: 90;
+    -fx-border-width: 2;
+}
+.combo-box.student{
+    -fx-background-color: #ffa500; /* Orange color for teachers */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+}
+.combo-box.teacher{
+    -fx-background-color: #0598ff; /* Orange color for teachers */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+}
+.combo-box.principle{
+    -fx-background-color: #ccccff; /* Orange color for teachers */
+    -fx-border-color: #000000;
+    -fx-border-radius: 90;
+    -fx-background-radius: 90;
+    -fx-border-width: 2;
+}

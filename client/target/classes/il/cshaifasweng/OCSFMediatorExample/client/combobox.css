@@ -1,0 +1,27 @@
+.combo-box{
+    -fx-background-color:  #0598ff;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.combo-box:hover{
+    -fx-background-color:  #1f75fe;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.combo-box:armed , .combo-box:showing{
+    -fx-background-color:  #1f75fe;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-effect: dropshadow(gaussian, #0598ff, 6, 0.5, 0, 0);
+
+}
+.combo-box {
+    -fx-effect: dropshadow(gaussian, #0598ff, 6, 0.5, 0, 0);
+
+}

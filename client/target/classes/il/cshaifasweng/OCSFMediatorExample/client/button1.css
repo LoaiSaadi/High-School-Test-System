@@ -1,0 +1,32 @@
+.button{
+
+    -fx-background-color:  #0598ff;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 6, 0.5, 0, 0);
+
+}
+.button:hover{
+
+    -fx-background-color:  #1f75fe;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 10, 0.5, 0, 0);
+
+}
+.button:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+    -fx-min-width: 155x;
+    -fx-min-height:29px ;
+    -fx-effect: dropshadow(gaussian, #0598ff, 10, 0.5, 0, 0);
+
+}

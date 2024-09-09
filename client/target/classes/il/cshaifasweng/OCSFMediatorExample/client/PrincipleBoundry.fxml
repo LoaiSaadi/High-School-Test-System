@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.PrincipleBoundry">
+   <left>
+      <AnchorPane prefHeight="500.0" prefWidth="209.0" style="-fx-background-color: #ccccff;" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="homeBtn" layoutY="3.0" mnemonicParsing="false" onAction="#homeBtnAction" prefHeight="32.0" prefWidth="209.0" style="-fx-background-color: #5a4fcf;" stylesheets="@Pbutuun.css" text="Home" textFill="WHITE" />
+            <Button fx:id="extraTimeBtn" layoutY="183.0" mnemonicParsing="false" onAction="#extraTimeAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View Extra Time Requests" textFill="WHITE" />
+            <Button fx:id="viewQuestionsBtn" layoutY="48.0" mnemonicParsing="false" onAction="#viewQuestionsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View questions" textFill="WHITE" />
+            <Button fx:id="teacherReportsBtn" layoutY="225.0" mnemonicParsing="false" onAction="#teacherReportsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="Teacher Reports" textFill="WHITE" />
+            <Button fx:id="viewGradesBtn" layoutY="138.0" mnemonicParsing="false" onAction="#viewGradesAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View grades" textFill="WHITE" />
+            <Button fx:id="logoutBtn" layoutY="442.0" mnemonicParsing="false" onAction="#logoutAction" stylesheets="@Pbutuun.css" text="Logout" textFill="WHITE" />
+            <Button fx:id="studentReportsBtn" layoutY="315.0" mnemonicParsing="false" onAction="#studentReportsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="Student Reports" textFill="WHITE" />
+            <Button fx:id="courseReportsBtn" layoutY="270.0" mnemonicParsing="false" onAction="#courseReportsAction" prefHeight="32.0" prefWidth="140.0" text="Course Reports" textFill="WHITE">
+               <stylesheets>
+                  <URL value="@designs.css" />
+                  <URL value="@Pbutuun.css" />
+               </stylesheets>
+            </Button>
+            <Button fx:id="viewExamsBtn" layoutY="93.0" mnemonicParsing="false" onAction="#viewExamsAction" prefHeight="32.0" prefWidth="140.0" stylesheets="@Pbutuun.css" text="View exams" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </left>
+   <right>
+      <AnchorPane prefHeight="500.0" prefWidth="730.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane layoutX="19.0" prefHeight="500.0" prefWidth="672.0">
+               <children>
+                  <Text fx:id="principleName" fill="MEDIUMSLATEBLUE" layoutX="219.0" layoutY="95.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Principle" wrappingWidth="234.95361328125">
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="timeLabel" layoutX="469.0" layoutY="36.0" prefHeight="67.0" prefWidth="173.0" textFill="MEDIUMSLATEBLUE">
+                     <font>
+                        <Font name="Algerian" size="24.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="351.0" fitWidth="649.0" layoutX="31.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../images/finallogop.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="bellBtn" layoutX="640.0" layoutY="458.0" mnemonicParsing="false" onAction="#bellAction" prefHeight="30.0" prefWidth="33.0" stylesheets="@Pbuttun1.css" />
+            <ImageView fx:id="bellArrow" fitHeight="34.0" fitWidth="47.0" layoutX="600.0" layoutY="439.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/purpleArrow.png" />
+               </image>
+            </ImageView>
+            <ListView fx:id="notificationList" layoutX="407.0" layoutY="230.0" prefHeight="200.0" prefWidth="251.0">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.48235294222831726" green="0.40784314274787903" blue="0.9333333373069763" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </ListView>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

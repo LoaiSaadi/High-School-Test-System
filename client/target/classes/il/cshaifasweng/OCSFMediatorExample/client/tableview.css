@@ -1,0 +1,35 @@
+/* Set the default background color to white for all rows */
+.table-row-cell {
+    -fx-background-color: white;
+}
+
+/* Set the background color for odd rows */
+.table-row-cell:odd {
+    -fx-background-color: lightgray;
+}
+
+/* Align cell text to the center-left */
+.table-cell {
+    -fx-alignment: center-left;
+    -fx-text-fill: black; /* Set default text color to black */
+}
+
+/* Set the background color and text color of the selected row */
+.table-row-cell:selected {
+    -fx-background-color: #1f75fe; /* Set the background color of the selected row to blue */
+    -fx-text-fill: white; /* Set text color of the selected row to white */
+}
+
+/* Style for the first cell in each column */
+.table-view .table-cell,
+.table-view .column-header .label {
+    -fx-background-color: #1f75fe; /* Set the background color of the first cell to white */
+    -fx-text-fill: black; /* Set text color of the first cell to black */
+}
+
+/* Set the background color and text color of the first row when it's selected */
+.table-view .table-row-cell:selected .table-cell,
+.table-view .column-header  {
+    -fx-background-color: #1f75fe; /* Set the background color of the selected first row to red */
+    -fx-text-fill: white; /* Set text color of the selected first row to white */
+}

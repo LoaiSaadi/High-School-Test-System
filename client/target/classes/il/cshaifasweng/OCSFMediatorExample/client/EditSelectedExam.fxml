@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="500.0" maxWidth="900.0" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.EditSelectedExamBoundry">
+   <top>
+      <AnchorPane prefHeight="500.0" prefWidth="900.0" style="-fx-background-color: #ffffff;" BorderPane.alignment="CENTER">
+         <children>
+            <ComboBox fx:id="chooseCourse" layoutX="39.0" layoutY="23.0" onAction="#chooseCourseAction" prefWidth="150.0" promptText="Choose Course" stylesheets="@combobox.css" />
+            <ListView fx:id="questionListView" layoutX="10.0" layoutY="133.0" prefHeight="256.0" prefWidth="231.0" style="-fx-border-color: #000000;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></ListView>
+            <ListView fx:id="listOfAllQuestions" layoutX="246.0" layoutY="133.0" prefHeight="256.0" prefWidth="231.0" style="-fx-border-color: #000000; -fx-border-width: 2;">
+               <effect>
+                  <DropShadow />
+               </effect></ListView>
+            <ListView fx:id="selectedQuestions" layoutX="481.0" layoutY="133.0" prefHeight="256.0" prefWidth="231.0" style="-fx-border-color: #000000; -fx-border-width: 2;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></ListView>
+            <Button fx:id="showBtn" layoutX="70.0" layoutY="395.0" mnemonicParsing="false" onAction="#showAction" stylesheets="@button1.css" text="Show Question">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="selectBtn" layoutX="300.0" layoutY="395.0" mnemonicParsing="false" onAction="#ConfirmSelect" stylesheets="@button1.css" text="Confirm Select">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button fx:id="backbtn" layoutX="297.0" layoutY="456.0" mnemonicParsing="false" onAction="#backAction" prefHeight="29.0" prefWidth="103.0" stylesheets="@button1.css" text="Back">
+               <effect>
+                  <DropShadow />
+               </effect></Button>
+            <Button fx:id="saveBtn" layoutX="551.0" layoutY="395.0" mnemonicParsing="false" onAction="#saveExam" stylesheets="@button1.css" text="Confirm Edit">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <TextField fx:id="examPeriod" layoutX="220.0" layoutY="23.0" onAction="#examPeriodAction" promptText="Enter Exam Period" style="-fx-background-color: trasparent; -fx-background-radius: 90; -fx-border-radius: 90; -fx-border-color: #0598ff; -fx-border-width: 2px 2px 2px 2px;" />
+            <TextArea fx:id="commentStudet" layoutX="741.0" layoutY="309.0" prefHeight="80.0" prefWidth="131.0" style="-fx-border-color: #000000; -fx-border-width: 2;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></TextArea>
+            <TextArea fx:id="commentTeacher" layoutX="741.0" layoutY="193.0" prefHeight="82.0" prefWidth="131.0" style="-fx-border-color: #000000; -fx-border-width: 2;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></TextArea>
+            <Label layoutX="10.0" layoutY="81.0" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="             Current Question In Exam">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="245.0" layoutY="81.0" prefHeight="25.0" prefWidth="229.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="           All Available Questions">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="481.0" layoutY="82.0" prefHeight="23.0" prefWidth="232.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="  Choosen Questions for Edited Exam">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="741.0" layoutY="287.0" prefHeight="21.0" prefWidth="132.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="Comments For Student" />
+            <Label layoutX="740.0" layoutY="171.0" prefHeight="21.0" prefWidth="133.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="Comments For Teacher" />
+            <Label layoutX="9.0" layoutY="108.0" prefHeight="26.0" prefWidth="117.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Question">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="125.0" layoutY="108.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Score">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="245.0" layoutY="108.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Question">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="362.0" layoutY="108.0" prefHeight="25.0" prefWidth="115.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Score">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="481.0" layoutY="108.0" prefHeight="25.0" prefWidth="121.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Question">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <Label layoutX="602.0" layoutY="108.0" prefHeight="26.0" prefWidth="111.0" style="-fx-background-color: #0598ff; -fx-border-color: #000000; -fx-border-width: 2px 2px 2px 2px;" text="          Score">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.019607843831181526" green="0.5960784554481506" blue="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect></Label>
+            <ImageView fx:id="logo" fitHeight="114.0" fitWidth="141.0" layoutX="772.0" layoutY="57.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/finallogo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="timeLabel" layoutX="720.0" layoutY="4.0" prefHeight="67.0" prefWidth="173.0" textFill="#0598ff">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

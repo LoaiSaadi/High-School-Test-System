@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="500.0" maxWidth="900.0" minHeight="500.0" minWidth="900.0" prefHeight="500.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="il.cshaifasweng.OCSFMediatorExample.client.LoginBoundry">
+   <left>
+      <AnchorPane fx:id="anchorPane" prefHeight="500.0" prefWidth="359.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="logo" fitHeight="191.0" fitWidth="217.0" layoutY="127.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/logoWhite.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="220.0" layoutY="164.0" text="High" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="205.0" layoutY="223.0" text="School" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="220.0" layoutY="278.0" text="Test" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="327.0" text="System" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="327.0" text="HSTS" textFill="WHITE">
+               <font>
+                  <Font name="Algerian" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="500.0" prefWidth="455.0" stylesheets="@login.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="userLogin" layoutX="188.0" layoutY="142.0" stylesheets="@login.css" text="User Login" textFill="#0598ff">
+               <font>
+                  <Font name="David Bold" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="passwordTxt" layoutX="162.0" layoutY="254.0" onAction="#passwordAction" prefHeight="41.0" prefWidth="194.0" promptText="password" stylesheets="@login.css" visible="false" />
+            <PasswordField fx:id="passwordHidden" layoutX="162.0" layoutY="254.0" prefHeight="41.0" prefWidth="194.0" promptText="password" stylesheets="@login.css" />
+            <TextField fx:id="usernameTxt" layoutX="162.0" layoutY="197.0" onAction="#usernameAction" prefHeight="41.0" prefWidth="191.0" promptText="username" stylesheets="@login.css" />
+            <ImageView fx:id="userpassword" fitHeight="86.0" fitWidth="28.0" layoutX="119.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/userpas.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="loginBtn" layoutX="170.0" layoutY="389.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="25.0" prefWidth="183.0" stylesheets="@login.css" text="                             Login" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="David Bold" size="12.0" />
+               </font>
+            </Button>
+            <CheckBox fx:id="checkbox" layoutX="165.0" layoutY="307.0" mnemonicParsing="false" onAction="#changeVisibility" prefHeight="20.0" prefWidth="136.0" stylesheets="@login.css" text="show password" textFill="#0598ff">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font></CheckBox>
+            <Label fx:id="timeLabel" layoutX="402.0" layoutY="14.0" prefHeight="67.0" prefWidth="173.0" stylesheets="@login.css" textFill="#0598ff">
+               <font>
+                  <Font name="Algerian" size="24.0" />
+               </font></Label>
+            <ComboBox fx:id="userType" layoutX="170.0" layoutY="336.0" onAction="#userTypeAction" prefHeight="25.0" prefWidth="185.0" promptText="User Type" stylesheets="@login.css" />
+            <ImageView fx:id="users" fitHeight="127.0" fitWidth="118.0" layoutX="199.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/users.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

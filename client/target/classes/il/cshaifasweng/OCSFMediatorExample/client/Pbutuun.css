@@ -1,0 +1,30 @@
+/* styles.css */
+.button {
+
+
+    -fx-background-color:  #7b68ee;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 0 30 30 0;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-width: 0 0 3 3;
+    -fx-min-height: 30px;
+    -fx-min-width: 140px;
+    -fx-translate:-fx-scale-x 0.5s , -fx-scale-y 0.5s;
+
+
+}
+
+.button:hover {
+
+    -fx-background-color:   #5a4fcf;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 0 30 30 0;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-width: 0 0 3 3;
+
+}
+
+.button:pressed {
+    -fx-translate-x: 1px; /* Move the button 5 pixels to the right */
+    -fx-translate-y: 1px; /* Move the button 5 pixels down */
+}

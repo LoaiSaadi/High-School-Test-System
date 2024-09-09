@@ -1,0 +1,27 @@
+.button{
+    -fx-background-color:  #1f75fe;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 3 3;
+    -fx-border-radius: 0 30 30 0;
+    -fx-min-width: 140px;
+    -fx-min-height:30px ;
+    -fx-translate:-fx-scale-x 0.5s , -fx-scale-y 0.5s;
+
+
+
+
+}
+.button:hover{
+    -fx-background-color:  #273be2;
+    -fx-background-radius: 0 30 30 0;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 0 0 3 3 ;
+    -fx-border-radius: 0 30 30 0;
+    -fx-min-width: 209px;
+    -fx-min-height:30px ;
+}
+.button:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+}

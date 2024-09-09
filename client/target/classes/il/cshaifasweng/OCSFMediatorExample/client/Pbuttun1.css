@@ -1,0 +1,23 @@
+
+.button{
+               -fx-background-color:  #7b68ee;
+               -fx-background-radius: 30 30 30 30;
+               -fx-border-radius: 30 30 30 30;
+               -fx-border-color: #000000;
+               -fx-border-width: 2px 2px 2px 2px;
+           }
+.button:hover{
+    -fx-background-color:  #5a4fcf;
+    -fx-background-radius: 30 30 30 30;
+    -fx-border-radius: 30 30 30 30;
+    -fx-border-color: #000000;
+    -fx-border-width: 2px 2px 2px 2px;
+}
+.button:pressed{
+    -fx-translate-x: 1px;
+    -fx-translate-y: 1px;
+}
+.table-header-cell {
+    -fx-background-color: #5a4fcf; /* Set the background color */
+    -fx-font-weight: bold; /* Make the text bold */
+}

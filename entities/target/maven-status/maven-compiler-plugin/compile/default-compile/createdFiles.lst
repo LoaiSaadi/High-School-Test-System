@@ -1,0 +1,12 @@
+il\cshaifasweng\OCSFMediatorExample\entities\ExtraTime.class
+il\cshaifasweng\OCSFMediatorExample\entities\Notification.class
+il\cshaifasweng\OCSFMediatorExample\entities\Question.class
+il\cshaifasweng\OCSFMediatorExample\entities\Exam.class
+il\cshaifasweng\OCSFMediatorExample\entities\Subject.class
+il\cshaifasweng\OCSFMediatorExample\entities\Course.class
+il\cshaifasweng\OCSFMediatorExample\entities\ReadyExam.class
+il\cshaifasweng\OCSFMediatorExample\entities\Student.class
+il\cshaifasweng\OCSFMediatorExample\entities\Teacher.class
+il\cshaifasweng\OCSFMediatorExample\entities\User.class
+il\cshaifasweng\OCSFMediatorExample\entities\Principle.class
+il\cshaifasweng\OCSFMediatorExample\entities\Message.class

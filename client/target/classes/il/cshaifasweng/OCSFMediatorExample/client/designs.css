@@ -1,0 +1,20 @@
+.button
+{
+    -fx-background-color: #9ACD;
+    -fx-background-radius: 20; /* Set the radius to make the button round */
+    -fx-min-width: 120px; /* Set the minimum width of the button */
+    -fx-min-height: 30px;
+}
+.Label
+{
+    -fx-background-color: #9ACD;
+}
+.ComboBox
+{
+    -fx-background-color: #9ACD;
+}
+.radio-button .radio{
+    -fx-border-color: #0598ff;
+    -fx-border-radius: 90;
+    -fx-border-width: 1;
+}
