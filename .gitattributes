@@ -1,0 +1,6 @@
+# Force GitHub to recognize .java files as Java
+*.java linguist-language=Java
+
+# Ignore all files in the 'node_modules' directory (or other non-Java files)
+node_modules/* linguist-vendored
+*.md linguist-vendored
